@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etRequestTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Talep Konusu"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etRequestDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Talep Açıklaması"
+        android:inputType="textMultiLine"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/etRequestMuhtar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Talep Muhtarı"/>
+
+    <TextView
+        android:id="@+id/tvTalepTürü"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Talep Türü Seçin:"
+        android:textSize="16sp" />
+
+    <!-- Spinner for talep türü -->
+    <Spinner
+        android:id="@+id/spinnerRequestType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Talep Türü" />
+
+    <Button
+        android:id="@+id/btnSubmitRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Talep Ekle"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
